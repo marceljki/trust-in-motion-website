@@ -63,7 +63,7 @@ params:
       url: 'https://facebook.com/nusserstudios'
     instagram:
       enabled: true
-      url: 'https://instagram.com/nusserstudios'
+      url: 'https://instagram.com/klinka'
     twitter:
       enabled: true
       url: 'https://twitter.com/nusserstudios'
