@@ -40,6 +40,12 @@
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                     <p>This is the content for Section 1. Click on the links above to navigate to other sections.</p>
                 </section>
+                <div class="grid-container">
+
+                <p>This is some text placed next to the image using CSS Grid.</p>
+                {{ $image := resources.GetMatch "images/global/sample-logo.svg" }}
+                <img src="{{ $image.RelPermalink }}" alt="Placeholder Image">
+                </div>
         </div>
     </div>
             <section class="background-section">

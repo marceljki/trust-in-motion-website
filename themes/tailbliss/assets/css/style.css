@@ -94,7 +94,7 @@ section.background-section {
   background-repeat: no-repeat; /* Prevents the image from repeating */
 
   /* Optional Styling for Section */
-  padding: 100px 20px;
+  padding: 100px 200px;
   color: black; /* To make text readable if the image is dark */
   height: 100vh; /* Set height to full viewport height */
   text-align: left;
@@ -106,6 +106,23 @@ section.background-section h2 {
 
 section.background-section p {
   font-size: 1.5em;
+}
+
+.grid-container {
+  display: flex; /* Use flexbox to align items in a row */
+  align-items: center; /* Vertically align items */
+  gap: 200px; /* Space between the image and the text */
+  padding-top: 300px;
+  padding-left: 200px;
+}
+
+.grid-container img {
+  max-width: 200px; /* Limit the size of the image */
+  height: auto; /* Maintain the image aspect ratio */
+}
+
+.grid-container p {
+  font-size: 1.2em; /* Adjust text size */
 }
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
