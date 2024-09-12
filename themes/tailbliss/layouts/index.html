@@ -1,0 +1,50 @@
+{{ define "main" }}
+<main xmlns="http://www.w3.org/1999/html">
+    <div class="">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto">
+            <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
+                <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
+                    <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight bg-beige-300 md:text-5xl xl:text-6xl dark:text-white">
+                        {{ .Site.Title }}
+                    </h1>
+                    <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
+                        {{ .Site.Params.Moto }}
+                    </h2>
+                    <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+                        {{ .Site.Params.Description}}
+                    </p>
+                    <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-white">
+                       Bei Fragen gerne eine E-Mail an <a href="mailto:linda.dylong@trust-in-motion.de"><br><strong>linda.dylong@trust-in-motion.de</strong></br></a>
+                    </p>
+                </div>
+                <div class="col-span-6">
+                    {{ $hero := resources.GetMatch "images/pages/logo-wide.png" }}
+
+                    {{ $thumb := ($hero.Fill "400x400 webp q90") }}
+                    {{ $large := ($hero.Fill "576x576 webp q90") }}
+
+                    <img srcset="
+                        {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
+                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="max-w-sm w-full max-w-xl mx-auto rounded-lg" />
+                </div>
+            </div>
+                <section id="aboutSection">
+                    <h2>Section 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p>This is the content for Section 1. Click on the links above to navigate to other sections.</p>
+                </section>
+                <section id="aboutSection2">
+                    <h2>Section 1</h2>
+                    <p>testtesttest</p>
+                    <p>testtesttest</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p>This is the content for Section 1. Click on the links above to navigate to other sections.</p>
+                </section>
+        </div>
+    </div>
+            <section class="background-section">
+                <h2>Section with Background Image</h2>
+                <p>This section has an image in the background.</p>
+            </section>
+</main>
+{{ end }}

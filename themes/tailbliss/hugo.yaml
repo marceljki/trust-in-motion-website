@@ -1,0 +1,122 @@
+baseURL: ''
+title: TailBliss
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: Nusser Studios
+  authorimage: ../assets/images/global/author.webp
+  og_image: /images/tailbliss-cover.png
+  moto: "Für mehr Bewegung in Ihrem Unternehmen"
+  description: "Diese Seite befindet sich im Aufbau."
+  disable_theme_toggle: false
+  disable_stay_uptodate: false
+
+  social_media:
+    github:
+      enabled: true
+      url: 'https://github.com/nusserstudios'
+    facebook:
+      enabled: true
+      url: 'https://facebook.com/nusserstudios'
+    instagram:
+      enabled: true
+      url: 'https://instagram.com/nusserstudios'
+    twitter:
+      enabled: true
+      url: 'https://twitter.com/nusserstudios'
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: aboutSection
+      weight: 20
+    - identifier: contact
+      name: Contact
+      url: aboutSection2
+      weight: 50
+  footer:
+    - identifier: impressum
+      name: Impressum
+      url: /impressum/
+      weight: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: false
+    simple: false
+  twitter:
+    disable: false
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: false
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: false
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.104.0"
