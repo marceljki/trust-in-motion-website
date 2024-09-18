@@ -2713,6 +2713,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 12rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
