@@ -30,8 +30,14 @@
                     {{ end }}
                 </div>
             </div>
-
         </div>
+<div class="no-m">
+        {{ $hero := resources.Get "images/global/TEST-Welle.svg" }}
+        <img src="{{ $hero.RelPermalink }}"
+             alt="TailBliss Hero"
+             class="w-99 rounded-lg"/>
+</div>
+
         <section id="aboutSection" class="background-section">
             <div class="grid-container">
                 {{ $image := resources.GetMatch "images/global/sample-logo.svg" }}

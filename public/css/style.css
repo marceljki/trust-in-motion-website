@@ -2866,6 +2866,11 @@ video {
   width: 20rem;
 }
 
+.w-99 {
+  width: 300rem;
+}
+
+
 .w-full {
   width: 100%;
 }
@@ -4818,6 +4823,13 @@ EmojiSymbols;
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .no-m{
+    max-width: 100%;
+    padding-left: 0;
+    margin-top: -700px;
+    margin-bottom: -300px;
   }
 
   .lg\:grid {
