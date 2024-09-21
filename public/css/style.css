@@ -94,10 +94,11 @@ section.background-section {
   background-repeat: no-repeat; /* Prevents the image from repeating */
 
   /* Optional Styling for Section */
-  padding: 100px 200px;
+  padding: 2.25px 200px;
   color: black; /* To make text readable if the image is dark */
   height: 100vh; /* Set height to full viewport height */
   text-align: left;
+  padding-left: 100px;
 }
 
 section.background-section h2 {
@@ -111,8 +112,8 @@ section.background-section p {
 .grid-container {
   display: flex; /* Use flexbox to align items in a row */
   align-items: center; /* Vertically align items */
-  gap: 200px; /* Space between the image and the text */
-  padding-top: 300px;
+  gap: 300px; /* Space between the image and the text */
+  padding-top: 50px;
   padding-left: 200px;
 }
 
@@ -2717,6 +2718,10 @@ video {
   margin-bottom: 12rem;
 }
 
+.mb-14 {
+  margin-bottom: 14rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -2751,6 +2756,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-12 {
+  margin-top: 5rem;
 }
 
 .block {
@@ -2805,6 +2814,14 @@ video {
   height: 2.25rem;
 }
 
+.h-10 {
+  height: 10rem;
+}
+
+.h-20 {
+  height: 120rem;
+
+}
 .h-auto {
   height: auto;
 }
@@ -2839,6 +2856,14 @@ video {
 
 .w-9 {
   width: 2.25rem;
+}
+
+.w-10 {
+  width: 4rem;
+}
+
+.w-96 {
+  width: 20rem;
 }
 
 .w-full {
