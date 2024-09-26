@@ -2795,6 +2795,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-9 {
+  margin-top: 2.5rem;
+}
+
 .mt-12 {
   margin-top: 5rem;
 }
@@ -3235,6 +3239,10 @@ body.bg-custom {
      object-fit: fill;
 }
 
+.p-0 {
+  padding: 0rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -3447,6 +3455,11 @@ body.bg-custom {
   line-height: 1.75rem;
 }
 
+.text-xxl {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -3648,6 +3661,12 @@ body.bg-custom {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.home-img{
+  width: 15%;
+  height: 15%;
+  overflow: hidden;
 }
 
 .transition-transform {

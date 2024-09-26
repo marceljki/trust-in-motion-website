@@ -12,35 +12,35 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>h1 Heading :blush: h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading Horizontal Rules Typographic replacements Enable typographer option to see result.&#xA;(c) (C) (r) (R) (tm) (TM) (p) (P) +-&#xA;test.. test&amp;hellip; test&amp;hellip;.. test?&amp;hellip;.. test!&amp;hellip;.&#xA;!!!!!! ???? ,, &amp;ndash; &amp;mdash;&#xA;&amp;ldquo;Smartypants, double quotes&amp;rdquo; and &amp;lsquo;single quotes&amp;rsquo;&#xA;Emphasis This is bold text&#xA;This is bold text&#xA;This is italic text&#xA;This is italic text&#xA;Strikethrough&#xA;Blockquotes Blockquotes can also be nested&amp;hellip;</description>
+      <description>&lt;h1 id=&#34;h1-heading-blush&#34;&gt;h1 Heading :blush:&lt;/h1&gt;&#xA;&lt;h2 id=&#34;h2-heading&#34;&gt;h2 Heading&lt;/h2&gt;&#xA;&lt;h3 id=&#34;h3-heading&#34;&gt;h3 Heading&lt;/h3&gt;&#xA;&lt;h4 id=&#34;h4-heading&#34;&gt;h4 Heading&lt;/h4&gt;&#xA;&lt;h5 id=&#34;h5-heading&#34;&gt;h5 Heading&lt;/h5&gt;&#xA;&lt;h6 id=&#34;h6-heading&#34;&gt;h6 Heading&lt;/h6&gt;&#xA;&lt;h2 id=&#34;horizontal-rules&#34;&gt;Horizontal Rules&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;hr&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;typographic-replacements&#34;&gt;Typographic replacements&lt;/h2&gt;&#xA;&lt;p&gt;Enable typographer option to see result.&lt;/p&gt;&#xA;&lt;p&gt;(c) (C) (r) (R) (tm) (TM) (p) (P) +-&lt;/p&gt;&#xA;&lt;p&gt;test.. test&amp;hellip; test&amp;hellip;.. test?&amp;hellip;.. test!&amp;hellip;.&lt;/p&gt;&#xA;&lt;p&gt;!!!!!! ???? ,,  &amp;ndash; &amp;mdash;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Smartypants, double quotes&amp;rdquo; and &amp;lsquo;single quotes&amp;rsquo;&lt;/p&gt;&#xA;&lt;h2 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This is italic text&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This is italic text&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Blockquotes can also be nested&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Sat, 18 Dec 2021 03:10:36 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
-      <description> </description>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Impressum</title>
       <link>http://localhost:1313/impressum/</link>
       <pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate>
       <guid>http://localhost:1313/impressum/</guid>
-      <description>Impressum Angaben gemäß § 5 TMG:&#xA;Linda Dylong&#xA;Kontakt:&#xA;Telefon: +49 17649241504&#xA;E-Mail: linda.dylong@trust-in-motion.de&#xA;Umsatzsteuer-ID:&#xA;Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: 46/051/07783&#xA;Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:&#xA;Linda Dylong&#xA;Haftungsausschluss Haftung für Inhalte Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</description>
+      <description>&lt;h1 id=&#34;impressum&#34;&gt;Impressum&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Angaben gemäß § 5 TMG:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linda Dylong&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Kontakt:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Telefon: +49 17649241504&lt;/p&gt;&#xA;&lt;p&gt;E-Mail: &lt;a href=&#34;mailto:linda.dylong@trust-in-motion.de&#34;&gt;linda.dylong@trust-in-motion.de&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Umsatzsteuer-ID:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: 46/051/07783&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linda Dylong&lt;/p&gt;&#xA;&lt;h2 id=&#34;haftungsausschluss&#34;&gt;Haftungsausschluss&lt;/h2&gt;&#xA;&lt;h3 id=&#34;haftung-für-inhalte&#34;&gt;Haftung für Inhalte&lt;/h3&gt;&#xA;&lt;p&gt;Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Prose</title>
       <link>http://localhost:1313/prose/</link>
       <pubDate>Sat, 18 Dec 2021 11:10:36 +0800</pubDate>
       <guid>http://localhost:1313/prose/</guid>
-      <description>@tailwindcss/typography View on GitHub!&#xA;Beautiful typographic defaults for HTML you don&amp;rsquo;t control.&#xA;The official Tailwind CSS Typography plugin provides a set of prose classes you can use to add beautiful typographic defaults to any vanilla HTML you don’t control, like HTML rendered from Markdown, or pulled from a CMS.&#xA;Tailwind CSS IntelliSense extension for Visual Studio Code&#xA;&amp;lt;article class=&amp;#34;prose lg:prose-xl&amp;#34;&amp;gt;&#xD;{{ markdown }}&#xD;&amp;lt;/article&amp;gt; To see what it looks like in action, check out our live demo on Tailwind Play.</description>
+      <description>&lt;h2 id=&#34;tailwindcsstypography&#34;&gt;@tailwindcss/typography&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/tailwindlabs/tailwindcss-typography&#34;&gt;View on GitHub&lt;/a&gt;!&lt;/p&gt;&#xA;&lt;p&gt;Beautiful typographic defaults for HTML you don&amp;rsquo;t control.&lt;/p&gt;&#xA;&lt;p&gt;The official Tailwind CSS Typography plugin provides a set of prose classes you can use to add beautiful typographic defaults to any vanilla HTML you don’t control, like HTML rendered from Markdown, or pulled from a CMS.&lt;/p&gt;&#xA;&lt;p&gt;Tailwind CSS IntelliSense extension for Visual Studio Code&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;article class=&amp;#34;prose lg:prose-xl&amp;#34;&amp;gt;&#xA;  {{ markdown }}&#xA;&amp;lt;/article&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To see what it looks like in action, check out our &lt;a href=&#34;https://play.tailwindcss.com/uj1vGACRJA?layout=preview&#34;&gt;live demo&lt;/a&gt; on Tailwind Play.&#xA;​&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
       <link>http://localhost:1313/todo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/todo/</guid>
-      <description>To - Do: das logo in der Nav Bar gößer machen </description>
+      <description>&lt;h1 id=&#34;to---do&#34;&gt;To - Do:&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;das logo in der Nav Bar gößer machen&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
