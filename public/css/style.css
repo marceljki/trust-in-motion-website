@@ -2791,12 +2791,16 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
 .mt-9 {
-  margin-top: 2.5rem;
+  margin-top: 2.1rem;
 }
 
 .mt-12 {
@@ -2863,6 +2867,11 @@ video {
   height: 120rem;
 
 }
+
+.h-99 {
+  height: 300rem;
+
+}
 .h-auto {
   height: auto;
 }
@@ -2910,7 +2919,6 @@ video {
 .w-99 {
   width: 300rem;
 }
-
 
 .w-full {
   width: 100%;
@@ -2971,6 +2979,28 @@ video {
 .max-w-xl {
   max-width: 36rem;
 }
+
+.styled-quote {
+  font-size: 1.5rem; /* Larger font size for the quote */
+  font-style: italic; /* Italicize the text to emphasize it's a quote */
+  color: #333; /* Dark gray text for readability */
+  padding: 1.5rem; /* Add some padding inside the blockquote */
+  margin: 1.5rem 0; /* Margin around the blockquote */
+  background-color: #f9f9f9; /* Light background color to distinguish the quote */
+}
+
+.styled-quote::before, .styled-quote::after {
+  content: ""; /* Remove the automatic quotes */
+}
+
+.styled-quote cite {
+  display: block; /* Display the citation as a block element */
+  text-align: right; /* Align the citation to the right */
+  margin-top: 1rem; /* Add some space above the citation */
+  font-size: 1rem; /* Slightly smaller font for the citation */
+  color: #555; /* Lighter gray for the citation text */
+}
+
 
 .flex-1 {
   flex: 1 1 0%;
@@ -3668,8 +3698,8 @@ body.bg-custom {
 }
 
 .home-img{
-  width: 15%;
-  height: 15%;
+  width: 12%;
+  height: 12%;
   overflow: hidden;
 }
 
