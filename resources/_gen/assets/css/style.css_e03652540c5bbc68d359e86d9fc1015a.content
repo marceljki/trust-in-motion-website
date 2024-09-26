@@ -4678,7 +4678,7 @@ EmojiSymbols;
   .bg-image{
     background-image: url( '../images/global/TEST-Welle.svg' );
     background-size: 120% 120%;
-    background-size: cover;
+    background-position: center;
   }
 
   .no-m{
