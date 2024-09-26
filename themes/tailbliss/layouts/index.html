@@ -1,92 +1,61 @@
 {{ define "main" }}
 <main xmlns="http://www.w3.org/1999/html">
     <div class="bg-image">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto ">
-            <div class="grid items-center gap-8 mb-12 sm:mb-0 lg:gap-12 lg:grid-cols-12">
-                <div class="col-span-6 px-4 text-center mb-12 mt-12 lg:text-left">
-                    <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight bg-beige-300 md:text-5xl xl:text-6xl">
-                        {{ .Site.Title }}
-                    </h1>
-                    <h2 class="pb-2 text-3xl font-light text-gray-800 md:text-4xl">
-                        {{ .Site.Params.Moto }}
-                    </h2>
-                    <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
-                        {{ .Site.Params.Description}}
-                    </p>
-                    <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
-                        Bei Fragen gerne eine E-Mail an <a href="mailto:linda.dylong@trust-in-motion.de"><br><strong>linda.dylong@trust-in-motion.de</strong></br>
-                    </a>
-                    </p>
-                </div>
-                <div class="col-span-6 mb-14 mt-12">
-                    {{ $hero := resources.Get "images/pages/Trust-In-Motion-Logo.svg" }}
-
-                    {{ if $hero }}
-                    <img src="{{ $hero.RelPermalink }}"
-                         alt="TailBliss Hero"
-                         class="w-96 mx-auto rounded-lg"/>
-                    {{ else }}
-                    <p>Bild konnte nicht geladen werden.</p>
-                    {{ end }}
+        <div class="content">
+            <div class="max-w-screen-xl px-4 py-8 mx-auto ">
+                <div class="grid items-center gap-8 mb-12 sm:mb-0 lg:gap-12 lg:grid-cols-12">
+                    <div class="col-span-6 px-4 text-center mb-12 mt-12 lg:text-left">
+                        <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight bg-beige-300 md:text-5xl xl:text-6xl">
+                            {{ .Site.Title }}
+                        </h1>
+                        <h2 class="pb-2 text-3xl font-light text-gray-800 md:text-4xl">
+                            {{ .Site.Params.Moto }}
+                        </h2>
+                        <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
+                            {{ .Site.Params.Description }}
+                        </p>
+                        <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
+                            Bei Fragen gerne eine E-Mail an
+                            <a href="mailto:linda.dylong@trust-in-motion.de">
+                                <strong>linda.dylong@trust-in-motion.de</strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-span-6 mb-14 mt-12">
+                        {{ $hero := resources.Get "images/pages/Trust-In-Motion-Logo.svg" }}
+                        {{ if $hero }}
+                        <img src="{{ $hero.RelPermalink }}" alt="Trust-In-Motion Logo" class="w-96 mx-auto rounded-lg"/>
+                        {{ else }}
+                        <p>Bild konnte nicht geladen werden.</p>
+                        {{ end }}
+                    </div>
                 </div>
             </div>
         </div>
-<!--<div class="no-m">-->
-<!--        {{ $hero := resources.Get "images/global/TEST-Welle.svg" }}-->
-<!--        <img src="{{ $hero.RelPermalink }}"-->
-<!--             alt="TailBliss Hero"-->
-<!--             class="w-99 rounded-lg"/>-->
-<!--</div>-->
+    </div>
 
-        <section id="aboutSection" class="background-section">
-            <div class="grid-container">
-                {{ $image := resources.GetMatch "images/global/sample-logo.svg" }}
-                <img src="{{ $image.RelPermalink }}" alt="Placeholder Image">
-                <div>
-                    <h2>Unsere Mission</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                        amet.</p>
-
-                </div>
+    <section id="aboutSection" class="background-section">
+        <div class="grid-container">
+            {{ $image := resources.GetMatch "images/global/sample-logo.svg" }}
+            <img src="{{ $image.RelPermalink }}" alt="Placeholder Image">
+            <div>
+                <h2>Unsere Mission</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt
+                    ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt
+                    ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores
+                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    amet.</p>
             </div>
-
-        </section>
-
-
-        <!--- SECOND SECTION !-->
-
-
-        <!--            <section id="aboutSection2">-->
-        <!--                <h2>Section 1</h2>-->
-        <!--                <p>testtesttest</p>-->
-        <!--                <p>testtesttest</p>-->
-        <!--                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut-->
-        <!--                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores-->
-        <!--                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.-->
-        <!--                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut-->
-        <!--                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores-->
-        <!--                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>-->
-        <!--                <p>This is the content for Section 1. Click on the links above to navigate to other sections.</p>-->
-        <!--            </section>-->
-        <!--            <div class="grid-container">-->
-
-        <!--                {{ $image := resources.GetMatch "images/global/sample-logo.svg" }}-->
-        <!--                <img src="{{ $image.RelPermalink }}" alt="Placeholder Image">-->
-        <!--                <h2>This is some text placed next to the image using CSS Grid.</h2>-->
-        <!--            </div>-->
-        <!--    </div>-->
-        <!--    <section class="background-section">-->
-        <!--        <h2>Section with Background Image</h2>-->
-        <!--        <p>This section has an image in the background.</p>-->
-        <!--    </section>-->
+        </div>
+    </section>
 </main>
 {{ end }}
