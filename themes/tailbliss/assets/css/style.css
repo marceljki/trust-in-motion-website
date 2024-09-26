@@ -4675,6 +4675,12 @@ EmojiSymbols;
     margin-top: 0px;
   }
 
+  .bg-image{
+    background-image: url( '../images/global/TEST-Welle.svg' );
+    background-size: 120% 120%;
+    background-size: cover;
+  }
+
   .no-m{
     max-width: 100%;
     padding-left: 0;
