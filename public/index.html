@@ -31,12 +31,6 @@
 <meta property="og:type" content="website" />
 
 <script>
-    
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark')
-    }
 </script>
 
 
@@ -44,7 +38,7 @@
 
 </head>
 
-<body class="bg-zinc-100 dark:bg-gray-800">
+<body class="bg-zinc-100">
     <div class="top-0 z-50 w-full text-gray-500 border-2 border-gray-900 md:sticky border-b-stone-200/10"
      xmlns:x-transition="http://www.w3.org/1999/xhtml">
     <div x-data="{ open: false }"
@@ -91,16 +85,16 @@
         <div class="max-w-screen-xl px-4 py-8 mx-auto">
             <div class="grid items-center gap-8 mb-12 sm:mb-0 lg:gap-12 lg:grid-cols-12">
                 <div class="col-span-6 px-4 text-center mb-12 mt-12 lg:text-left">
-                    <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight bg-beige-300 md:text-5xl xl:text-6xl dark:text-white">
+                    <h1 class="mb-2 text-4xl font-extrabold leading-none tracking-tight bg-beige-300 md:text-5xl xl:text-6xl">
                         Trust In Motion
                     </h1>
-                    <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
+                    <h2 class="pb-2 text-3xl font-light text-gray-800 md:text-4xl">
                         Für mehr Bewegung in Ihrem Unternehmen
                     </h2>
-                    <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50">
+                    <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
                         Diese Seite befindet sich im Aufbau.
                     </p>
-                    <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-white">
+                    <p class="max-w-xl mx-auto mb-6 font-normal bg-beige-300 lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
                         Bei Fragen gerne eine E-Mail an <a href="mailto:linda.dylong@trust-in-motion.de"><br><strong>linda.dylong@trust-in-motion.de</strong></br>
                     </a>
                     </p>
