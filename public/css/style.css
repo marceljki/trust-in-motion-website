@@ -3114,6 +3114,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.circle-img{
+  clip-path: circle(50%);
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }

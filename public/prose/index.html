@@ -41,13 +41,13 @@
      xmlns:x-transition="http://www.w3.org/1999/xhtml">
     <div x-data="{ open: false }"
          class="flex flex-col max-w-full px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-        <div class="flex flex-row items-center justify-between p-4">
+        <div class="flex flex-row items-center justify-between">
             <a href="http://localhost:1313/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
                 <img src="http://localhost:1313/images/Trust-In-Motion-Logo-ohne-schrift.svg"
-                     class="cropped-img transition-opacity h-9 w-9 group-hover:opacity-50 group-focus:opacity-70"
+                     class="home-img transition-opacity group-hover:opacity-50 group-focus:opacity-70"
                      alt="Trust In Motion Logo" />
                 <div
-                     class="mt-1 ml-3 text-xl font-black tracking-tight text-gray-100 uppercase transition-colors group-hover:text-gray-400/60">
+                     class="mt-9 ml-3 text-xxl font-black tracking-tight text-gray-100 uppercase transition-colors group-hover:text-gray-400/60">
                     Trust In Motion</div>
             </a>
             <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open" role="navigation" aria-expanded="false" aria-label="Main" aria-controls="menuItems">
@@ -77,6 +77,26 @@
         </nav>
     </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const links = document.querySelectorAll('nav a[href^="#"]'); 
+
+        links.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); 
+
+                const targetID = this.getAttribute('href').substring(1); 
+                const targetElement = document.getElementById(targetID);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth' 
+                    });
+                }
+            });
+        });
+    });
+</script>
     
 <article>
   <header class="mb-4 bg-primary-600">
@@ -147,34 +167,34 @@
 &lt;/article&gt;
 </code></pre><h2 id="here-are-the-classes-that-are-generated-using-a-totally-default-tailwind-css-v20-build">Here are the classes that are generated using a totally default Tailwind CSS v2.0 build:</h2>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Class</th>
-          <th style="text-align: left">Gray scale</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">prose-gray (default)</td>
-          <td style="text-align: left">Gray</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-slate</td>
-          <td style="text-align: left">Slate</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-zinc</td>
-          <td style="text-align: left">Zinc</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-neutral</td>
-          <td style="text-align: left">Neutral</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-stone</td>
-          <td style="text-align: left">Stone</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Class</th>
+<th>Gray scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prose-gray (default)</td>
+<td>Gray</td>
+</tr>
+<tr>
+<td>prose-slate</td>
+<td>Slate</td>
+</tr>
+<tr>
+<td>prose-zinc</td>
+<td>Zinc</td>
+</tr>
+<tr>
+<td>prose-neutral</td>
+<td>Neutral</td>
+</tr>
+<tr>
+<td>prose-stone</td>
+<td>Stone</td>
+</tr>
+</tbody>
 </table>
 <p>Modifier classes are designed to be used with the multi-class modifier pattern and must be used in conjunction with the base prose class.</p>
 <p>Always include the <code>prose</code> class when adding a gray scale modifier</p>
@@ -191,34 +211,34 @@
 </code></pre><h3 id="five-different-typography-sizes-are-included-out-of-the-box">Five different typography sizes are included out of the box:</h3>
 <p>Class	Body font size</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">prose-sm</th>
-          <th style="text-align: left">Gray scale</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">prose-gray (default)</td>
-          <td style="text-align: left">0.875rem (14px)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-base (default)</td>
-          <td style="text-align: left">1rem (16px)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-lg</td>
-          <td style="text-align: left">1.125rem (18px)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-xl</td>
-          <td style="text-align: left">1.25rem (20px)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-2xl</td>
-          <td style="text-align: left">1.5rem (24px)</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>prose-sm</th>
+<th>Gray scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prose-gray (default)</td>
+<td>0.875rem (14px)</td>
+</tr>
+<tr>
+<td>prose-base (default)</td>
+<td>1rem (16px)</td>
+</tr>
+<tr>
+<td>prose-lg</td>
+<td>1.125rem (18px)</td>
+</tr>
+<tr>
+<td>prose-xl</td>
+<td>1.25rem (20px)</td>
+</tr>
+<tr>
+<td>prose-2xl</td>
+<td>1.5rem (24px)</td>
+</tr>
+</tbody>
 </table>
 <p>These can be used in combination with Tailwind’s breakpoint modifiers to change the overall font size of a piece of content at different viewport sizes:</p>
 <pre tabindex="0"><code>&lt;article class=&#34;prose md:prose-lg lg:prose-xl&#34;&gt;
@@ -246,118 +266,118 @@ Use element modifiers to customize the style of individual elements in your cont
 </code></pre><p>This makes it easy to do things like style links to match your brand, add a border radius to images, and tons more.</p>
 <h3 id="heres-a-complete-list-of-available-element-modifiers">Here’s a complete list of available element modifiers:</h3>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Modifier</th>
-          <th style="text-align: left">Target</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left">prose-headings:{utility}</td>
-          <td style="text-align: left">h1, h2, h3, h4, th</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-lead:{utility}</td>
-          <td style="text-align: left">[class~=&ldquo;lead&rdquo;]</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-h1:{utility}</td>
-          <td style="text-align: left">h1</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-h2:{utility}</td>
-          <td style="text-align: left">h2</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-h3:{utility}</td>
-          <td style="text-align: left">h3</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-h4:{utility}</td>
-          <td style="text-align: left">h4</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-p:{utility}</td>
-          <td style="text-align: left">p</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-a:{utility}</td>
-          <td style="text-align: left">a</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-blockquote:{utility}</td>
-          <td style="text-align: left">blockquote</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-figure:{utility}</td>
-          <td style="text-align: left">figure</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-figcaption:{utility}</td>
-          <td style="text-align: left">figcaption</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-strong:{utility}</td>
-          <td style="text-align: left">strong</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-em:{utility}</td>
-          <td style="text-align: left">em</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-code:{utility}</td>
-          <td style="text-align: left">code</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-pre:{utility}</td>
-          <td style="text-align: left">pre</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-ol:{utility}</td>
-          <td style="text-align: left">ol</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-ul:{utility}</td>
-          <td style="text-align: left">ul</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-li:{utility}</td>
-          <td style="text-align: left">li</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-table:{utility}</td>
-          <td style="text-align: left">table</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-thead:{utility}</td>
-          <td style="text-align: left">thead</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-tr:{utility}</td>
-          <td style="text-align: left">tr</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-th:{utility}</td>
-          <td style="text-align: left">th</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-td:{utility}</td>
-          <td style="text-align: left">td</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-img:{utility}</td>
-          <td style="text-align: left">img</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-video:{utility}</td>
-          <td style="text-align: left">video</td>
-      </tr>
-      <tr>
-          <td style="text-align: left">prose-hr:{utility}</td>
-          <td style="text-align: left">hr</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Modifier</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prose-headings:{utility}</td>
+<td>h1, h2, h3, h4, th</td>
+</tr>
+<tr>
+<td>prose-lead:{utility}</td>
+<td>[class~=&ldquo;lead&rdquo;]</td>
+</tr>
+<tr>
+<td>prose-h1:{utility}</td>
+<td>h1</td>
+</tr>
+<tr>
+<td>prose-h2:{utility}</td>
+<td>h2</td>
+</tr>
+<tr>
+<td>prose-h3:{utility}</td>
+<td>h3</td>
+</tr>
+<tr>
+<td>prose-h4:{utility}</td>
+<td>h4</td>
+</tr>
+<tr>
+<td>prose-p:{utility}</td>
+<td>p</td>
+</tr>
+<tr>
+<td>prose-a:{utility}</td>
+<td>a</td>
+</tr>
+<tr>
+<td>prose-blockquote:{utility}</td>
+<td>blockquote</td>
+</tr>
+<tr>
+<td>prose-figure:{utility}</td>
+<td>figure</td>
+</tr>
+<tr>
+<td>prose-figcaption:{utility}</td>
+<td>figcaption</td>
+</tr>
+<tr>
+<td>prose-strong:{utility}</td>
+<td>strong</td>
+</tr>
+<tr>
+<td>prose-em:{utility}</td>
+<td>em</td>
+</tr>
+<tr>
+<td>prose-code:{utility}</td>
+<td>code</td>
+</tr>
+<tr>
+<td>prose-pre:{utility}</td>
+<td>pre</td>
+</tr>
+<tr>
+<td>prose-ol:{utility}</td>
+<td>ol</td>
+</tr>
+<tr>
+<td>prose-ul:{utility}</td>
+<td>ul</td>
+</tr>
+<tr>
+<td>prose-li:{utility}</td>
+<td>li</td>
+</tr>
+<tr>
+<td>prose-table:{utility}</td>
+<td>table</td>
+</tr>
+<tr>
+<td>prose-thead:{utility}</td>
+<td>thead</td>
+</tr>
+<tr>
+<td>prose-tr:{utility}</td>
+<td>tr</td>
+</tr>
+<tr>
+<td>prose-th:{utility}</td>
+<td>th</td>
+</tr>
+<tr>
+<td>prose-td:{utility}</td>
+<td>td</td>
+</tr>
+<tr>
+<td>prose-img:{utility}</td>
+<td>img</td>
+</tr>
+<tr>
+<td>prose-video:{utility}</td>
+<td>video</td>
+</tr>
+<tr>
+<td>prose-hr:{utility}</td>
+<td>hr</td>
+</tr>
+</tbody>
 </table>
 <p>When stacking these modifiers with other modifiers like hover, you most likely want the other modifier to come first:</p>
 <pre tabindex="0"><code>&lt;article class=&#34;prose prose-a:text-blue-600 hover:prose-a:text-blue-500&#34;&gt;
@@ -538,8 +558,7 @@ module.exports = {
             </div>
             
         </nav>
-        <div class="flex justify-center mt-8 space-x-6">
-        </div>
+
         <p class="mt-8 text-base text-center text-gray-400">&copy; 2024
             Trust In Motion. All rights
             reserved.</p>
